@@ -1,3 +1,4 @@
+---
 name: Super-Linter
 
 on: push
@@ -17,3 +18,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_ALL_CODEBASE: true
           RUN_LOCAL: false
+          OUTPUT_DETAILS: detailed
+          DISABLE_ERRORS: false
+          DISABLE_ERRORS_REPORT: true
+

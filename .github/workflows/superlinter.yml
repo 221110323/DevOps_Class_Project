@@ -1,4 +1,3 @@
----
 name: Super-Linter
 
 on: push
@@ -14,11 +13,5 @@ jobs:
       - name: Run Super-Linter
         uses: github/super-linter@v4
         env:
-          DEFAULT_BRANCH: main
+          DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          VALIDATE_ALL_CODEBASE: true
-          RUN_LOCAL: false
-          OUTPUT_DETAILS: detailed
-          DISABLE_ERRORS: false
-          DISABLE_ERRORS_REPORT: true
-
